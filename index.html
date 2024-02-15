@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="" />
+        <meta name="author" content="Hayden Duran" />
+        <title>Delta Lab Llama Game</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js" integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
+        <script src="scripts/scripts.js"></script>
+    </head>
+    <body class="bg-light">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand mx-auto" href="#">The Mystical Lucky Eccentric Silly Llama Game!</a>
+        </nav>
+        <div class="container-fluid bg-light">
+            <div class="row border-bottom">
+                <div class="col p-1 bg-secondary text-center text-light">
+                    By: Hayden Duran
+                </div>
+            </div>
+            <div class="row p-4 border-bottom">
+                <div class="col text-center">
+                    <h3>Figure Out What Llama you are today!</h3>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col text-center">
+                    <h1>Instructions:</h1>
+                    <p class="lead">Enter your name and birth month below!</p>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-6 mx-auto">
+                    Name:
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 mx-auto text-center">
+                    <input type="text" class="form-control" id="name-input" placeholder="Name Here">
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-6 mx-auto">
+                    Birth Month:
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 mx-auto text-center">
+                    <select id="month-select" class="form-select" aria-label="Default select example">
+                        <option selected></option>
+                        <option value="January">January</option>
+                        <option value="February">February</option>
+                        <option value="March">March</option>
+                        <option value="April">April</option>
+                        <option value="May">May</option>
+                        <option value="June">June</option>
+                        <option value="July">July</option>
+                        <option value="August">August</option>
+                        <option value="September">September</option>
+                        <option value="October">October</option>
+                        <option value="November">November</option>
+                        <option value="December">December</option>
+                      </select>
+                </div>
+            </div> 
+            <div class="row mt-2">
+                <div class="col-6 mx-auto">
+                    <button id="submit-button" type="button" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+            <div class="row mt-2" id="result">
+                <div class="col-6 mx-auto">
+                    <div class="card mb-3 shadow">
+                        <div class="row g-0">
+                          <div class="col-4">
+                            <img id="llama-image" src="" class="img-fluid rounded-start" width="100%" alt="Llama Image">
+                          </div>
+                          <div class="col-8">
+                            <div class="card-body">
+                              <h5 class="card-title m-0 p-0" id="name-header"></h5>
+                              <div>You have<span id="letterCount" class="p-1"></span>letters in your name</div>
+                              <div>You have<span id="vowelCount" class="p-1"></span>vowels in your name</div>
+                              <div>Your first name is<span id="firstName" class="p-1"></span>, how nice!</div>
+                              <div id="lastNameContainer">Your last name is<span id="lastName" class="p-1"></span>, very nice!</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>      
+        </div>
+    </body>
+</html>
